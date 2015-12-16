@@ -31,7 +31,7 @@ function setHead()
         $('.slogan').attr('data-value', "Maybe I just got gas or something...");
         break;
     default:
-        $('.slogan').attr('data-value', "Don't you wish the guy on the moon would come back?...");
+        $('.slogan').attr('data-value', "Can I have some vitamins?...");
         break;
     }
 }//setHead

@@ -1,35 +1,107 @@
-.mainBody {
+@font-face {
+    font-family: moonFlower;
+    src: url("../font/moonFlower.ttf")
+}
 
+body {
+    background: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: moonFlower;
+    position: fixed;
+    height: 100%;
+    background-image: url("../img/bg.jpg");
+}
+
+h1 {
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.mainBody{
+    text-align: center;
+    alignment: center;
+    display: inline-block;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    margin: 3%;
 }
 
 .slogan {
+    font-size: 48px;
+    color: rgba(121, 121, 121, 1);
+}
 
+.slogan:after {
+    content: attr(data-value);
 }
 
 .subtitle {
-
+    font-size: 36px;
+    color: rgba(121, 121, 121, 1);
 }
 
-.util {
-
-}
-
-.searchForm {
-
+.subtitle:after {
+    content: attr(data-value);
 }
 
 .searchBar {
-
+    width: 50px;
+    height: 20px;
+    padding: 0;
+    font-size: 9px;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: right center;
+    border-width: 1px;
+    border-style: solid;
+    outline: 0;
+    opacity: 0.5;
+    transition: all 1s;
+    background-image: url('../img/icon/search.png');
 }
 
-.google {
+.searchBar:hover {
+    cursor: pointer;
+    transition: all 0.5s;
+    background-position: right center;
+    opacity: 1;
+    width: 300px;
+    padding: 0 25px 0 5px;
+}
 
+.searchBar:focus {
+    cursor: text;
+    width: 350px;
+    height: 40px;
+    padding: 0 25px 0 5px;
+    font-size: 12px;
 }
 
 .links {
-
+    padding: 0;
+    list-style-type: none;
+    color: rgba(121, 121, 121, 1);
 }
 
 .link {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px 0px;
+    padding: 3;
+    padding-right: 3%;
+    color: rgba(121, 121, 121, 1);
+}
 
+.link > a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 1s;
+    color: rgba(241, 241, 241, 1);
+}
+
+.link > a:hover {
+    color: rgba(121, 121, 121, 1);
 }
